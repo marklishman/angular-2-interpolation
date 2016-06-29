@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'escape',
     template: `
-        <h3>Escape</h3>
+        <h2>Escape</h2>
         <p>{{html}}</p>
         <p>{{script}}</p>
         <p>
