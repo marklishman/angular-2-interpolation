@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { PersonComponent } from "./person.component";
 import { CalcComponent } from "./calc.component";
-import { ExpressionsComponent } from "./expressions.component";
+import { EscapingComponent } from "./escaping.component";
 
 @Component({
     selector: 'interpolation',
@@ -16,7 +16,7 @@ import { ExpressionsComponent } from "./expressions.component";
     directives: [
         PersonComponent,
         CalcComponent,
-        ExpressionsComponent
+        EscapingComponent
     ]
 })
 export class AppComponent {

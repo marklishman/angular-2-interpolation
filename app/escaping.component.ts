@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'other',
     template: `
+        <p>{{html}}</p>
         <p>{{script}}</p>
         <p>
             For HTML, don't use {{stars}}, 
@@ -10,9 +11,10 @@ import { Component } from '@angular/core';
         </p>
         <p ngNonBindable>{{Don't evaluate this}}</p>`
 })
-export class ExpressionsComponent {
+export class EscapingComponent {
 
-    private script = '<script>alert("danger!")</script>`';
+    private html = '<div>this is a div</div>';
+    private script = '<script>alert("danger!")</script>';
 
     private get stars(): string {
         return '&#10032;'.repeat(4);
