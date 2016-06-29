@@ -11,7 +11,7 @@ import { EscapingComponent } from "./escaping.component";
         <hr/>
         <calc></calc>
         <hr/>
-        <other></other>
+        <escape></escape>
         `,
     directives: [
         PersonComponent,

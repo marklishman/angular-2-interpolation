@@ -3,7 +3,7 @@ import {Component} from '@angular/core';
 @Component({
     selector: 'person',
     template: `
-        <h1>{{heading}}</h1>
+        <h2>{{heading}}</h2>
         <p>
             Name: {{person.sex === 'm' ? 'Mr' : 'Ms'}}
                   {{person.name.first + ' ' + person.name.surname}}

@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'other',
+    selector: 'escape',
     template: `
+        <h3>Escape</h3>
         <p>{{html}}</p>
         <p>{{script}}</p>
         <p>

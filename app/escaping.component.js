@@ -23,8 +23,8 @@ var EscapingComponent = (function () {
     });
     EscapingComponent = __decorate([
         core_1.Component({
-            selector: 'other',
-            template: "\n        <p>{{html}}</p>\n        <p>{{script}}</p>\n        <p>\n            For HTML, don't use {{stars}}, \n            use <span [innerHTML]=\"stars\"></span> instead\n        </p>\n        <p ngNonBindable>{{Don't evaluate this}}</p>"
+            selector: 'escape',
+            template: "\n        <h3>Escape</h3>\n        <p>{{html}}</p>\n        <p>{{script}}</p>\n        <p>\n            For HTML, don't use {{stars}}, \n            use <span [innerHTML]=\"stars\"></span> instead\n        </p>\n        <p ngNonBindable>{{Don't evaluate this}}</p>"
         }), 
         __metadata('design:paramtypes', [])
     ], EscapingComponent);

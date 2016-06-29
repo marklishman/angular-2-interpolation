@@ -3,6 +3,7 @@ import {Component} from '@angular/core';
 @Component({
     selector: 'calc',
     template: `
+        <h3>Calc</h3>
         <p>
             <input #num1 type="number" value="{{init.first}}" (input)="0">
             <input #num2 type="number" value="{{init.second}}" (input)="0">
