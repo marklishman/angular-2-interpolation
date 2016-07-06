@@ -7,11 +7,9 @@ import { EscapingComponent } from "./escaping.component";
 @Component({
     selector: 'interpolation',
     template: `
-        <person></person>
-        <hr/>
-        <calc></calc>
-        <hr/>
-        <escape></escape>
+        <person *ngIf="showSection('person')"></person>
+        <calc *ngIf="showSection('calc')"></calc>
+        <escape *ngIf="showSection('escape')"></escape>
         `,
     directives: [
         PersonComponent,
@@ -20,5 +18,13 @@ import { EscapingComponent } from "./escaping.component";
     ]
 })
 export class AppComponent {
+
+    private showSection(name: string): boolean {
+        if (!window.location.search) {
+            return true;
+        }
+        const PARAM = window.location.search.substr(1);
+        return PARAM === name;
+    }
 
 }
