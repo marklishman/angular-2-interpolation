@@ -1,8 +1,4 @@
-import { Component } from '@angular/core';
-
-import { PersonComponent } from "./person.component";
-import { CalcComponent } from "./calc.component";
-import { EscapingComponent } from "./escaping.component";
+import { Component } from "@angular/core";
 
 @Component({
     selector: 'interpolation',
@@ -10,12 +6,7 @@ import { EscapingComponent } from "./escaping.component";
         <person *ngIf="showSection('person')"></person>
         <calc *ngIf="showSection('calc')"></calc>
         <escape *ngIf="showSection('escape')"></escape>
-        `,
-    directives: [
-        PersonComponent,
-        CalcComponent,
-        EscapingComponent
-    ]
+        `
 })
 export class AppComponent {
 
